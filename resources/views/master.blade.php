@@ -14,7 +14,7 @@
 </head>
 <body>
     {{ View::make('header') }}
-    <div class="container">
+    <div>
         @yield('content') 
     </div>
     {{ View::make('footer') }}
@@ -36,5 +36,16 @@
         height: 500px;
         padding-top: 100px;
     }
+    .slide-img{
+        height: 400px !important;
+    }
+    .text-color{
+        background-color: rgb(167, 214, 214);
+        color: darkgray;
+    }
+    .custom-product{
+        height: 570px;
+    }
+
 </style>
 </html>
