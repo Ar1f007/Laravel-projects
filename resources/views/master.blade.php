@@ -41,10 +41,21 @@
     }
     .text-color{
         background-color: rgb(167, 214, 214);
-        color: darkgray;
     }
     .custom-product{
         height: 570px;
+    }
+
+    .trending-img{
+        height: 100px;
+    }
+    .trending-items{
+        float:left;
+        width: 16.667%;
+    }
+    .tranding-wrapper{
+        margin-top: 20px;
+        margin-bottom: 20px;
     }
 
 </style>
