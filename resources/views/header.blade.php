@@ -17,11 +17,11 @@
           <li><a href="#">Home <span class="sr-only">(current)</span></a></li>
           <li><a href="#">Order</a></li>
         </ul>
-        <form class="navbar-form navbar-left">
+        <form action="/search" class="navbar-form navbar-left">
           <div class="form-group">
-            <input type="text" class="form-control" placeholder="Search">
+            <input type="text" name='query' class="form-control search-box" placeholder="Search">
           </div>
-          <button type="submit" class="btn btn-default">Submit</button>
+          <button type="submit" class="btn btn-default">Search</button>
         </form>
         <ul class="nav navbar-nav navbar-right">
           <li><a href="#">Add to cart</a></li>
