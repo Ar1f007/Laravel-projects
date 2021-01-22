@@ -5,6 +5,7 @@
           <div class="col-sm-10">
             <div class="col-sm-4">
                 <div class="tranding-wrapper container">
+                    <a class="btn btn-success" href="order">Order now</a> <br><br>
                     <div class="">
                       @foreach ($products as $item)
                       <div class="row searched-items cart-item-divider">
@@ -29,8 +30,10 @@
                      </div> 
                      @endforeach
                     </div>
+                    <br> <br>
+              <a class="btn btn-success" href="order">Order now</a> <br><br>
                 </div>
-              </div>
+              </div> 
 
           </div>
           
