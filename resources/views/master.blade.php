@@ -63,6 +63,10 @@
     .search-box{
         width: 500px !important;
     }
-
+    .cart-item-divider{
+        border-bottom: 1px solid #ccc;
+        margin-bottom: 20px;
+        padding: 10px;
+    }
 </style>
 </html>
