@@ -14,9 +14,10 @@ use App\Http\Controllers\ProductController;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
+Route::view('/register', 'register');
 Route::view('/login', 'login');
 Route::post('/login', [UserController::class, 'login']);
+Route::post('/register', [UserController::class, 'register']);
 Route::get('/logout', function () {
     Session::forget('user');
     return redirect('login');
