@@ -12,7 +12,19 @@ if(Session::has('user')){
 <nav class="navbar navbar-default">
     <div class="container-fluid">
       
+        @if (Session::has('user'))
         <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/home">E-com</a>
+        </div>
+            
+        @else
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
             <span class="sr-only">Toggle navigation</span>
@@ -22,13 +34,15 @@ if(Session::has('user')){
           </button>
           <a class="navbar-brand" href="">E-com</a>
         </div>
+            
+        @endif
       
   
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         @if (Session::has('user'))
         <ul class="nav navbar-nav">
-          <li><a href="/">Home <span class="sr-only">(current)</span></a></li>
+          <li><a href="/home">Home <span class="sr-only">(current)</span></a></li>
           <li><a href="/orderList">Order</a></li>
         </ul>
         <form action="/search" class="navbar-form navbar-left">

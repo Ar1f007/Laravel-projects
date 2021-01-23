@@ -11,6 +11,8 @@
 
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="{{url('/css/style.css')}}">
 </head>
 <body>
     {{ View::make('header') }}
@@ -18,55 +20,5 @@
         @yield('content') 
     </div>
     {{ View::make('footer') }}
-   
-
-
-
-
-    {{-- <script>
-        $(document).ready(function(){
-            $('button').click(function(){
-                alert('all set');
-            })
-        })
-    </script> --}}
 </body>
-<style>
-    .custom-login{
-        height: 500px;
-        padding-top: 100px;
-    }
-    .slide-img{
-        height: 400px !important;
-    }
-    .text-color{
-        background-color: rgb(167, 214, 214);
-    }
-    .custom-product{
-        height: 570px;
-    }
-
-    .trending-img{
-        height: 100px;
-    }
-    .trending-items{
-        float:left;
-        width: 16.667%;
-    }
-    .tranding-wrapper{
-        margin-top: 20px;
-        margin-bottom: 20px;
-    }
-    .detail-img{
-        height: 200px;
-    }
-    .search-box{
-        width: 500px !important;
-    }
-    .cart-item-divider{
-        border-bottom: 1px solid #ccc;
-        margin-bottom: 20px;
-        padding: 10px;
-    }
-</style>
 </html>

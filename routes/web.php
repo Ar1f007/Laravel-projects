@@ -14,6 +14,7 @@ use App\Http\Controllers\ProductController;
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::view('/', 'login');
 Route::view('/register', 'register');
 Route::view('/login', 'login');
 Route::post('/login', [UserController::class, 'login']);
@@ -23,7 +24,7 @@ Route::get('/logout', function () {
     return redirect('login');
     
 });
-Route::get('/', [ProductController::class, 'index']);
+Route::get('/home', [ProductController::class, 'index']);
 Route::get('/details/{id}',[ProductController::class, 'detail']);
 Route::get('/search',[ProductController::class, 'search']);
 
