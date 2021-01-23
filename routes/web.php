@@ -31,3 +31,4 @@ Route::get('/cartList', [ProductController::class, 'cartList']);
 Route::get('/removeItem/{id}', [ProductController::class, 'removeItem']);
 Route::get('/order', [ProductController::class, 'order']);
 Route::post('/orderplace', [ProductController::class, 'orderplace']);
+Route::get('/orderList', [ProductController::class, 'orderList']);
